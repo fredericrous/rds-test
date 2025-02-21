@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "bundler",
+    "customConditions": ["react-native"]
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

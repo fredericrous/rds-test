@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test --filter='./packages/ui'",
+    "storybook": "turbo run storybook --cwd=packages/storybook && turbo run build --filter='./packages/*' --filter=!packages/storybook -- --watch",
+    "clean": "turbo run clean && npx rimraf node_modules",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.12.8",
+    "rimraf": "^5.0.5",
+    "turbo": "^1.13.3",
+    "yaml": "2.4.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

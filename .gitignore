@@ -1,0 +1,23 @@
+.DS_Store
+node_modules
+.turbo
+*.log
+.next
+dist
+dist-ssr
+*.local
+.env
+.cache
+server/dist
+public/dist
+storybook-static/
+*.scss.d.ts
+*.css.d.ts
+vite.config.*.timestamp-*
+dump.rdb
+coverage/
+.sst/
+sst-env.d.ts
+
+# we use pnpm lock, not npm lock
+package-lock.json
