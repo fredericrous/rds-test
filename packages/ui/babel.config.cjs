@@ -22,7 +22,6 @@ module.exports = function (api) {
       [
         reactStrictPreset,
         {
-          debug: dev,
           dev,
           platform: 'native',
         },
